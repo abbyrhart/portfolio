@@ -1,2 +1,2 @@
-# portfolio
-Personal site!
+# portfolio 🪴
+Welcome to my personal site!
