@@ -1,0 +1,333 @@
+/* phone view */
+/* import fonts */
+@font-face {
+	font-family: "PPMonument Extended Black";
+	src: url(../fonts/PPMonumentExtended-Black.otf);
+}
+
+/* skip to content styling */
+.skip a {
+	background: #FFFFFF;
+	left: 0;
+	padding: 6px;
+	position: absolute;
+	top: -40px;
+	-webkit-transition: top 1s ease-out;
+	-o-transition: top 1s ease-out;
+	transition: top 1s ease-out;
+	z-index: 1;
+}
+  
+.skip a:focus {
+top:20px;
+color: #000000;
+-webkit-text-decoration-style: solid;
+		text-decoration-style: solid;
+	z-index: 6;
+}
+
+
+b {
+	font-weight: 400;
+}
+
+* {
+	background-color: #E6F9E9;
+	padding: 0px;
+}
+
+.logo {
+	display: none;
+}
+
+nav ul {
+	list-style: none;
+	font-size: 30px;
+	padding: 0px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+li {
+	text-align: center;
+}
+
+ul {
+	border-bottom: 2px solid;
+	border-bottom-color: #41555D;
+}
+
+p, ul, li {
+	font-family: 'quasimoda';
+	font-weight: 300;
+	color: #41555D;
+	text-decoration: none;
+}
+
+/* Dropdown Button */
+.dropbtn {
+	background-color: #E6F9E9;
+	color: #41555D;
+	font-family: 'quasimoda';
+	font-size: 30px;
+	border: none;
+	font-weight: 300;
+  }
+
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+	position: relative;
+	display: inline-block;
+	z-index: 2;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #FFFFFF;
+	min-width: 108px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+	color: #41555D;
+	padding: 12px 0px;
+	text-decoration: none;
+	display: block;
+	background-color: #FFFFFF;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #E6F9E9;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}  
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+	background-color: #FFFFFF;
+	font-style: italic;
+}
+
+.dropdown-content img {
+	background-color: #FFFFFF;
+	height: 50px;
+}
+
+.dropdown-content a:hover img {
+	background-color: #E6F9E9;
+}
+
+a:link { text-decoration: none;
+		 color:#41555D; }
+
+
+a:visited { text-decoration: none; 
+			color:#41555D;      }
+
+
+a:hover { text-decoration: none; 
+		  font-style: italic;
+		  background-color:#FFFFFF;
+		}
+
+
+a:active { text-decoration: none; }
+
+p {
+	font-size: 8vw;
+	text-align: center;
+	text-justify: top;
+}
+
+h1 {
+	font-family: 'PPMonument Extended Black';
+	color:#FFFFFF;
+	font-size: 16vw;
+	-webkit-text-stroke-color: #41555D;
+	-webkit-text-stroke-width: 3px;
+	margin: 40px 20px 20px 20px;
+	text-align: center;
+	padding-bottom: 0px;
+}
+
+main {
+	display: flex;
+	flex-wrap: wrap;	
+	justify-content: center;
+}
+
+main img {
+	margin-left: auto;
+	margin-right: auto;
+	object-position: 0px 30px;
+	display: flex;
+	justify-content: center;
+	background-color: transparent;
+}
+
+body {
+	margin: 0px;
+}
+
+main p {
+	padding: 0px 20px;
+	margin-top: 10px;
+	z-index: 1;
+	background-color: transparent;
+}
+
+/* tablet view */
+@media screen and (min-width: 768px) {
+	ul {
+		border-bottom: 3px solid;
+		border-bottom-color: #41555D;
+	}
+
+	.logo {
+		display: block;
+	}
+	nav ul {
+		font-size: 45px;
+		display: flex;
+		justify-content: space-around;
+		align-content:end;
+	}
+
+	.logo img {
+		object-position: 0px;
+		width: 80px;
+	}
+
+	h1 {
+		font-size: 18vw;
+		margin-top: 18vh;
+		margin-right: auto;
+		margin-left: auto;
+		align-self:center;
+	}
+
+	main p {
+		font-size: 6vw;
+	}
+
+	main img {
+		margin-top: 18vh;
+		width: auto;
+	}
+
+	main {
+		justify-content: flex-end;
+	}
+	
+	nav ul {
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+
+	.dropbtn {
+		font-size: 45px;
+	}
+
+	.dropdown-content {
+		width: 162px;
+	}
+}
+
+/* laptop view */
+@media screen and (min-width: 1024px) {
+	main {
+		justify-content: flex-start;
+	}
+	h1 {
+		margin-left: 50px;
+		margin-right: 550px;
+		margin-top: 40px;
+		margin-bottom: 0px;
+	}
+
+	ul li {
+		font-size: 25px;
+		width: auto;
+	}
+
+	nav ul {
+		flex-wrap: wrap;
+		align-items: center;
+		margin-top: 0px;
+		margin-left: 10px;
+		margin-right: 10px;
+		margin-bottom: 0px;	
+		padding: 0px;
+	}
+
+	.dropbtn {
+		font-size: 25px;
+	}
+
+	.dropdown-content {
+		width: 90px;
+		min-width: 90px;
+	}
+
+	main p {
+		margin-left: 50px;
+		padding: 0px;
+		margin-top: 0px;
+		font-size: 40px;
+		margin-bottom: 0px;
+	}
+	
+	main img {
+		margin-top: auto;
+		padding-top: auto;
+		margin-left: auto;
+		width: auto;
+		max-width: 472px;
+
+		/* added in attempt to fix bug not sure if this worked yet */
+		position: relative;
+		bottom: 0;
+		}
+
+	#hearts {
+		margin-left: auto;
+		position: absolute;
+   	 	bottom: 0;
+   	 	right: 0;
+	}
+
+	.logo{ 
+		margin-top: auto;
+		margin-bottom: auto;
+		margin-right: auto;
+		padding-left: 20px;
+		padding-top: 10px;
+	}
+	
+	li img {
+		max-width: 50px;
+		height: auto;
+		object-fit: contain;
+	}
+
+	.about, .projects, .resume {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	h1 {
+		font-size: 100px;
+	}
+}
+
+/* no animation for skip to content */
+@media screen and (prefers-reduced-motion) {
+	.skip a {
+		transition: none;
+	}
+}
+
