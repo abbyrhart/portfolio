@@ -1,2 +1,2 @@
 # portfolio 🪴
-Welcome to my personal site!
+welcome to my personal site! view on abbyrhart.com :)
