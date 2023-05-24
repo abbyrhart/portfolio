@@ -1,2 +1,2 @@
 # portfolio 🪴
-welcome to my personal site! view on abbyrhart.com :)
+welcome to my personal site! view on <a href="abbyrhart.com">abbyrhart.com</a> :)
