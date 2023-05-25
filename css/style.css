@@ -129,7 +129,7 @@ a:visited { text-decoration: none;
 			color:#41555D;      }
 
 
-a:hover, .active { text-decoration: none; 
+a:hover, #active { text-decoration: none; 
 		  font-style: italic;
 		  background-color:#FFFFFF;
 		}
